@@ -16,9 +16,5 @@ public class SpringTestApplication {
         SpringApplication.run(SpringTestApplication.class, args);
     }
 
-//    @GetMapping
-//    public List<Student> hello(){
-//        return List.of(new Student(1L, "Marry", "marry@gmail.com",
-//                LocalDate.of(2000,10,5), 22));
-//    }
+
 }
