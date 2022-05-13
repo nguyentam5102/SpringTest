@@ -5,7 +5,12 @@ import java.time.LocalDate;
 import java.time.Period;
 
 @Entity
-@Table
+@Table(
+        name = "student",
+        uniqueConstraints = {
+                @UniqueConstraint(name = "student_email_unique", columnNames = "email")
+        }
+)
 public class Student {
     @Id
     @SequenceGenerator(
